@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="https://www.thymeleaf.org">
+<head>
+	<!-- Título -->
+	<title>SGT - Sistema de Gerenciamento de Tarefas</title>
+	
+	<!-- codificação binária -->
+	<meta charset="UTF-8" />
+	
+	<!-- ícone do título -->
+	<link rel="icon" th:href="@{/images/logo.ico}" type="image/x-icon" />
+	
+	<!-- inclusao do bootstrap -->
+	<link rel="stylesheet" href="/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css" />
+	
+	<!-- estilo -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="/webjars/font-awesome/5.13.0/css/all.css" />
+</head>
+<body>
+	<!-- chamada para o fragmento header definido em componentes/fragments -->
+	<div th:replace="components/fragments :: header"></div>
+	<div class="container">
+		<br />
+		<div class="card">
+  			<div class="card-header">
+    			<i class="fa fa-user"></i>&nbsp; Mensagem
+  			</div>
+  			<div class="card-body">
+    			<h5 class="card-title">Bem vindo!</h5>
+    			<p class="card-text">Este é o sistema de gerenciamento de tarefas do escritório modelo de ciência da computação.</p>
+  			</div>
+  			<div class="card-footer">
+  				<a href="" class="btn btn-primary btn-sm"><i class="fa fa-file-pdf"></i> Documentação</a>
+  			</div>
+		</div>
+	</div>
+	
+	<!-- chamada para o fragmento footer definido em componentes/fragments -->
+	<div th:replace="components/fragments :: footer"></div>
+	
+	<!-- jquery.min.js -->
+	<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+	
+	<!-- bootstrap.min.js -->
+	<script src="/webjars/bootstrap/4.4.1-1/js/bootstrap.min.js"></script>
+</body>
+</html>

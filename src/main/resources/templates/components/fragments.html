@@ -1,0 +1,77 @@
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<!-- Título -->
+	<title>SGT - Sistema de Gerenciamento de Tarefas</title>
+	
+	<!-- codificação binária -->
+	<meta charset="UTF-8" />
+	
+	<!-- ícone do título -->
+	<link rel="icon" th:href="@{/images/logo.ico}" type="image/x-icon" />
+	
+	<!-- inclusao do bootstrap -->
+	<link rel="stylesheet" href="/webjars/bootstrap/4.4.1-1/css/bootstrap.min.css" />
+	
+	<!-- estilo -->
+	<link rel="stylesheet" type="text/css" th:href="@{/css/style.css}">
+	
+	<!-- font-awesome -->
+	<link rel="stylesheet" href="/webjars/font-awesome/5.13.0/css/all.css" />
+</head>
+<body>
+	
+	<!-- Fragmento header -->
+	<header class="header" th:fragment="header">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container">
+				<a class="navbar-brand" href="/">
+					<img th:src="@{/images/sgt.png}" width="80" height="30" class="d-inline-block align-top" alt="" />
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header-navbar" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    				<span class="navbar-toggler-icon"></span>
+  				</button>
+				<div class="collapse navbar-collapse" id="header-navbar">
+    				<ul class="navbar-nav mr-auto">
+      					<li class="nav-item">
+        					<a class="nav-link" href="/"><i class="fa fa-home"></i> Início</a>
+      					</li>
+      					<li class="nav-item">
+        					<a class="nav-link" href=""><i class="fas fa-tasks"></i> Tarefas</a>
+      					</li>
+      					<li class="nav-item dropdown">
+        					<a class="nav-link dropdown-toggle" href="" id="navbar-dropdown-menu-link" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="fa fa-chart-bar"></i> Relatórios</a>
+        					<div class="dropdown-menu" aria-labelledby="navbar-dropdown-menu-link">
+          						<a class="dropdown-item" href=""><i class="fa fa-user"></i> Tarefas por Status</a>
+          						<a class="dropdown-item" href=""><i class="fa fa-user"></i> Tarefas por Usuários</a>
+        					</div>
+      					</li>
+    				</ul>
+    				<ul class="navbar-nav ml-auto">
+    					<li class="nav-item dropdown">
+    						<a class="nav-link dropdown-toggle" href="" data-toggle="dropdown" id="user-nav-drop"><i class="fa fa-user"></i>&nbsp; Usuário</a>
+    						<div class="dropdown-menu">
+    							<a class="dropdown-item" href=""><i class="fas fa-cog"></i>&nbsp; Configurações</a>
+    							<a class="dropdown-item" href=""><i class="fas fa-envelope"></i>&nbsp;  Mensagens</a>
+    							<a class="dropdown-item" href=""><i class="fas fa-power-off"></i>&nbsp;  Sair</a>
+    						</div>
+    					</li>
+    				</ul>
+  				</div>
+  			</div>
+		</nav>
+	</header>
+	
+	<!-- Fragmento header -->
+	<footer class="page-footer font-small blue" th:fragment="footer">
+  		<div class="footer-copyright text-center py-3">© 2020 Copyright:
+    		<a href="https://www2.unifap.br/ccomputacao/" target="_blank"> SGT Gerenciamento de Tarefas - Ciência da Computação - UNIFAP</a>
+  		</div>
+	</footer>
+	
+	<!-- jquery.min.js -->
+	<script src="/webjars/jquery/3.4.1/jquery.min.js"></script>
+	
+	<!-- bootstrap.min.js -->
+	<script src="/webjars/bootstrap/4.4.1-1/js/bootstrap.min.js"></script>
+</body>
+</html>

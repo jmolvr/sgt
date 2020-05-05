@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+html {
+	font-family: Opens Sans;
+	font-size: 13px;
+}
+
+.container input, table, p, h5 {
+	font-family: Open Sans;
+	font-size: 13px;
+}
